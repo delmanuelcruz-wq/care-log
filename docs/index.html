@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Care Log</title>
+  <meta name="description" content="A private treatment, side-effect and lab tracker. Everything stays on this phone.">
+  <meta name="theme-color" content="#f5f4f0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e0e0d" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Care Log">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <main id="main" tabindex="-1"></main>
+  <nav class="tabbar" aria-label="Sections">
+    <a href="#today" data-tab="today"><span class="ico" data-icon="today"></span><span>Today</span></a>
+    <a href="#symptoms" data-tab="symptoms"><span class="ico" data-icon="symptoms"></span><span>Symptoms</span></a>
+    <a href="#labs" data-tab="labs"><span class="ico" data-icon="labs"></span><span>Labs</span></a>
+    <a href="#visits" data-tab="visits"><span class="ico" data-icon="visits"></span><span>Visits</span></a>
+    <a href="#more" data-tab="more"><span class="ico" data-icon="more"></span><span>More</span></a>
+  </nav>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript><p style="padding:24px">Care Log needs JavaScript turned on.</p></noscript>
+  <script src="js/core.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/today.js"></script>
+  <script src="js/symptoms.js"></script>
+  <script src="js/labs.js"></script>
+  <script src="js/visits.js"></script>
+  <script src="js/treatment.js"></script>
+  <script src="js/more.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
